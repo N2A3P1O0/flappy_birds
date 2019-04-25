@@ -24,6 +24,7 @@ class Bird:
     def jump(self):
         self.speed = 15
 
+
 class Wall:
     def __init__(self):
         self.x = SCREEN_WIDTH + 10
@@ -73,8 +74,6 @@ class MyGame(arcade.Window):
 
         if random.randint(0, 1000) < 10:
             self.wall_list.append(Wall())
-
-        pass
 
     def on_key_press(self, key, modifiers):
         if key == arcade.key.SPACE:
